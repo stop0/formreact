@@ -1,24 +1,48 @@
-import logo from './logo.svg';
 import './App.css';
+import { NavBar } from './Components/NavBar';
+import {Route, Switch} from 'react-router-dom'
+import Portfolio from './Components/Portfolio'
+import Home from './Components/Home'
+import styled from 'styled-components'
+
+const BackgroundC = styled.div`
+
+    background: linear-gradient(132deg, #FC415A, #591BC5, #212335);
+    background-size: 400% 400%;
+    animation: Gradient 15s ease infinite;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    padding:0;
+    margin:0px;
+    @keyframes Gradient {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+
+
+`
+
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BackgroundC className="App">
+      <Switch>
+      <Route exact path="/" component={Home}/>
+      <Route path="/portfolio" component={Portfolio}/>
+      </Switch>
+    </BackgroundC>
   );
 }
 
