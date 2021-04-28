@@ -4,16 +4,16 @@ import {Route, Switch} from 'react-router-dom'
 import Portfolio from './Components/Portfolio'
 import Home from './Components/Home'
 import styled from 'styled-components'
+import contactFrom from "./Components/contactFrom"
 
 const BackgroundC = styled.div`
 
     background: linear-gradient(132deg, #FC415A, #591BC5, #212335);
     background-size: 400% 400%;
-    animation: Gradient 15s ease infinite;
+    animation: Gradient 5s ease infinite;
     position: relative;
-    height: 100vh;
+    height: auto;
     width: 100%;
-    overflow: hidden;
     padding:0;
     margin:0px;
     @keyframes Gradient {
@@ -40,7 +40,8 @@ function App() {
     <BackgroundC className="App">
       <Switch>
       <Route exact path="/" component={Home}/>
-      <Route path="/portfolio" component={Portfolio}/>
+      {/*<Route path="/portfolio" component={Portfolio}/>
+      <Route path="/contact" component={contactFrom}/>*/}
       </Switch>
     </BackgroundC>
   );

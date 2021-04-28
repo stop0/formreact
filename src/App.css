@@ -21,4 +21,18 @@
   flex-direction: column;
   font-size: calc(10px + 2vmin);
   color: white;
+  background: linear-gradient(132deg, #fc415a, #591bc5, #212335);
+  background-size: 400% 400%;
+  animation: Gradient 15s ease infinite;
+  @keyframes Gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
 }

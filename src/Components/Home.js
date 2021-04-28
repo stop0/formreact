@@ -4,7 +4,8 @@ import {NavBar} from "./NavBar"
 import styled from 'styled-components'
 import {Route, Switch} from 'react-router-dom'
 import {ContactForm} from "./contactFrom"
-
+import Avatar from "../assets/Avatar-Maker.svg"
+import {Cards} from "./Cards"
 
 const Button = styled.button`
 margin-left:1rem;
@@ -33,44 +34,22 @@ color:white;
 `
 const BackgroundG = styled.div`
 
-    background: linear-gradient(132deg, #FC415A, #591BC5, #212335);
-    background-size: 400% 400%;
-    animation: Gradient 15s ease infinite;
-    position: relative;
-    height: 100vh;
-    width: 100%;
-    overflow: hidden;
-    padding:0;
-    margin:0px;
-    @keyframes Gradient {
-        0% {
-          background-position: 0% 50%;
-        }
-        50% {
-          background-position: 100% 50%;
-        }
-        100% {
-          background-position: 0% 50%;
-        }
-      }
-
 
 
 `
 export const Home = () => {
     return (
-        <div>
-          <ContactForm/>
-          <NavBar/>
+        <BackgroundG>
 
+            <img src ={Avatar}/>
             <h1>Mohammed Dawod</h1>
             <h4>Software Developer</h4>
-            <h5>Based in Philaidelphia, PA</h5>
+            <h5>Based in Philadelphia, PA</h5>
             <h5>267 - 469 - 5265</h5>
-            <Link to='/Portfolio'>
+             {/*<Link to='/Portfolio'>
                 <Button>View Projects</Button>
 
-            </Link>
+    </Link>*/}
             
     <section>
         <a href="https://github.com/stop0">
@@ -81,11 +60,12 @@ export const Home = () => {
 
         <i style={{color:'white', margin:"1rem", fontSize:'48px',marginLeft:'5rem'}} class="fa fa-linkedin"></i>
         </a>
-
     </section>
 
+    <Cards/>
+    <ContactForm/>
 
-        </div>
+        </BackgroundG>
     )
 }
 
