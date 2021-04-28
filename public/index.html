@@ -34,9 +34,15 @@
   </head>
   <body>
     <form 
-    method="POST" data-netlify="true"
-    netlify netlify-honeypot = "bot-field"
-    hidden>
+    name="contact"
+    method="post"
+    action="/contact"
+    data-netlify="true"
+    data-netlify-honeypot="bot-field"
+
+    >
+        <input hidden type ="hidden " name="form-name"
+hidden>
             <input 
             type="text" 
             name="name"

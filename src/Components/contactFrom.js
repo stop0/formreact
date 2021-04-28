@@ -106,12 +106,16 @@ export const ContactForm = () => {
             <H1>Contact</H1>
         <form 
         name="contact"
-        method="post"
+        method="POST"
         action="/contact"
-        data-netlify="true"
-        data-netlify-honeypot="bot-field"
+        netlify="true"
+        netlify-honeypot="bot-field"
 
         >
+            <input name="bot-field" hidden />
+
+            <input type="hidden" name="contact" value="contact"/>
+
             <NEcontainer>
                 <Input 
                 required
