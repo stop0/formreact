@@ -106,7 +106,7 @@ export const ContactForm = () => {
             <H1>Contact</H1>
         <form 
         name="contact"
-        action = "/"
+        action = "/success/"
         method="POST" 
         >
             <input hidden type ="hidden " name="form-name"
