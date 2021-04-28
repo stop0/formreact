@@ -106,8 +106,11 @@ export const ContactForm = () => {
             <H1>Contact</H1>
         <form 
         name="contact"
-        action = "/success/"
-        method="POST" 
+        method="post"
+        action="/success/"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+
         >
             <input hidden type ="hidden " name="form-name"
             />
