@@ -45,7 +45,7 @@ export const Home = () => {
             <h1>Mohammed Dawod</h1>
             <h4>Software Developer</h4>
             <h5>Based in Philadelphia, PA</h5>
-            <h5>267 - 469 - 5265</h5>
+            <h5>dawodmohmmed@gmail.com</h5>
              {/*<Link to='/Portfolio'>
                 <Button>View Projects</Button>
 
