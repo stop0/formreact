@@ -82,45 +82,6 @@ export const Cards = () => {
         <Cardss>
             <Card>
                 <FlexT>
-                    <Container>
-                        <Image src ={UseMyTechStuff} />
-                    </Container>
-                    <Details>
-                    <h1>Use My Tech Stuff</h1>
-                    <p>A web app that users can create an account, log in, and either place their tech equipment for lease or another user can lease tech equipment that's available.
-</p>
-                    </Details>
-    
-                </FlexT>
-                <a href="https://tt27-rent-my-tech.vercel.app/">
-                <Button><i class="fa fa-desktop"></i> Website</Button>
-                </a>
-                <a href="https://github.com/Build-Week-TT27-Use-My-Tech-Stuff">
-                <Button><i class="fa fa-code"></i> Code</Button>
-                </a> 
-            </Card>
-            <Card>
-                <FlexT>
-                <Container>
-                    <Image src ={AfricanMarketplace} />
-                </Container>
-
-            <Details>
-            <h1>African Marketplace</h1>
-
-            <p>A web app that users can create an account, log in, and either place their produce for sale or buy produce with any type of quantities that they so should choose.
-</p>
-            </Details>
-            </FlexT>
-            <a href="https://front-end-odsqgnge3-ttwebft27.vercel.app//">
-                <Button><i class="fa fa-desktop"></i> Website</Button>
-                </a>
-                <a href="https://github.com/African-Marketplace-TT27">
-                <Button><i class="fa fa-code"></i> Code</Button>
-                </a> 
-            </Card>
-            <Card>
-                <FlexT>
                 <Container>
             <Image src ={WaterMyPlants} />
             </Container>
